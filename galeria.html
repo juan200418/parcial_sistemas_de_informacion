@@ -9,7 +9,6 @@
             height: 100%;
             margin: 0.2rem 0.0rem 0.0rem 0.2rem; ;
             padding: 0;
-            
 
 
         }
@@ -17,6 +16,7 @@
             background-color: #3A3A3A;
             display: flex;
             flex-direction: column;
+            
         }
         .titulo{
             background-image: url("img/fondo.jpg");
@@ -30,21 +30,39 @@
         .cuerpo{
             background: linear-gradient(#107FBF, #A8D2EB);
             text-align: center;
-            flex: 1; /* Para que ocupe todo el espacio restante */
+            flex: 1; 
+            display:0;
+            padding-top: 40px;
         }
         .pie{
             background-color: #1F3e49;
             text-align: center;
             margin-top: 0;
-            flex-shrink: 0; /* Para que el pie no se estire */
+            flex-shrink: 0; 
         }
-        .imagen{
-            text-align: center;
-            margin: 0 auto;
-            display: block;
+        .imagen {
+            text-align: center; 
+         }
+
+         .grupo-imagenes {
+            display: inline-block; 
+            margin: 5px; 
         }
-        .jugadores{
-            height: 200px;
+
+        .grupo-imagenes div {
+            width: 250px; 
+            height: 200px; 
+            border-radius: 10px; 
+            overflow: hidden; 
+            margin-right: 5px; 
+            margin-top: 20px;
+        }
+
+        .grupo-imagenes img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+            border-radius: 10px; 
         }
         h1,  h6 {
             color: white;
@@ -62,11 +80,12 @@
         h6{
             color: white;
             margin-top: 0;
-            font-family: Arial, Helvetica, sans-serif;
         }
         a{
-            color:white;
             text-decoration: none;
+        }
+        a h2{
+            color: white;
         }
     </style>
 </head>
@@ -76,23 +95,23 @@
             <br>
             <br>
             <br>
-            <h1><b>landing Page de Deportes</b></h1>
+            <h1><b>Landing Page de Deportes</b></h1>
             <h2 class="encabesado">¡Encuentra todo lo que necesita para mantenerte activo!</h2>
         </div>
     </header>
     <div class="cuerpo">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <h2>Galerìa de fotos</h2>
         <div class="imagen">
-            <img src="img/0-img.jfif" class="jugadores"  >
-            <h2><b>Deporte 1</b></h2>
-            <h3>descripcion lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-            <a href="galeria.html">Ver màs</a>
+            <div class="grupo-imagenes">
+                <div><img src="img/1-img.jfif"></div>
+                <div><img src="img/3-img.jfif"></div>
+            </div>
+            <div class="grupo-imagenes">
+                <div><img src="img/2-img.jfif"></div>
+                <div><img src="img/4-img.jfif"></div>
+            </div>
+            <br>
+            <a href="index.html"><h2>Regresar</h2></a>
         </div>
         
     </div>
